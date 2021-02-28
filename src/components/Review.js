@@ -1,21 +1,83 @@
 import React from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Reviewcard from './Reviewcard'
 import review1 from '../assets/review1.png'
 import review2 from '../assets/review2.png'
 import review3 from '../assets/review3.png'
-import Carousel from 'react-bootstrap/Carousel'
+
+import it from '../assets/🇮🇹.png'
+import us from '../assets/🇺🇸.png'
+
+
 const Review = () => {
     return (
-        <div className="p-10 plainback bg-cover">
-            <div className="flex pt-10 px-32">
-            <p className="text-white text-4xl libre">Reviews</p>
-            <a href='/' className="text-white ml-auto text-lg text-yellow-400">View all</a>
+        <div className="sm:p-10 plainback bg-cover">
+            <div className="flex sm:pt-10 sm:px-32">
+                <p className="text-white sm:text-4xl libre p-5 text-xl ">Reviews</p>
+                <a href='/' className="text-white ml-auto pr-10 sm:text-lg text-sm text-yellow-400 place-self-center">View all</a>
             </div>
-            <div className="flex mx-28 ">
-            <Reviewcard name="Hellen Jummy" image={review1} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
-            <Reviewcard name="Isaac Oluwatemilorun" image={review2} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
-            <Reviewcard name="Hellen Jummy" image={review3} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+            <div className="sm:mx-28 mx-10 pb-10">
+                <Carousel
+                additionalTransfrom={0}
+                arrows
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                containerClass="container-with-dots"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite={false}
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                responsive={{
+                    desktop: {
+                    breakpoint: {
+                        max: 3000,
+                        min: 1024
+                    },
+                    items: 3,
+                    partialVisibilityGutter: 40
+                    },
+                    mobile: {
+                    breakpoint: {
+                        max: 464,
+                        min: 0
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30
+                    },
+                    tablet: {
+                    breakpoint: {
+                        max: 1024,
+                        min: 464
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30
+                    }
+                }}
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+                >
+                    
+                <Reviewcard name="Hellen Jummy" image={review1} country={us} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+                <Reviewcard name="Isaac Oluwatemilorun" image={review2} country={it} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+                <Reviewcard name="Hellen Jummy" image={review3} country={us} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+                    
+                </Carousel>
             </div>
+
+            {/* <div className="block sm:mx-28 box-content sm:flex mx-10 pb-10">
+            <Reviewcard name="Hellen Jummy" image={review1} country={us} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+            <Reviewcard name="Isaac Oluwatemilorun" image={review2} country={it} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+            <Reviewcard name="Hellen Jummy" image={review3} country={us} address="Palo Alto, CA" content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing. '/>
+            </div> */}
         </div>
     )
 }
