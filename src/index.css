@@ -108,6 +108,15 @@
         line-height: 0.75rem;
     }
 
+.circle{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: thin;
+    border-color: #ffffffa2;
+}
+
 @media (min-width: 640px) {
 
     .card{

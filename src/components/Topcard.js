@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar';
-import Element from '../assets/Elements.png'
+import Heart from '../assets/Heart.png';
+import Like from '../assets/Like.png';
+
 import Stats from './Stats'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -15,13 +17,7 @@ const Topcard = () => {
                     <p className='text-white text-xl sm:my-10 sm:m-40 m-10'>Live from their sofa to yours. Get closer to your favorite artists, and never miss out.</p>
                     
                 </div>
-                <div className='element'>
-                    <div className='subtract'/>
-                    <div className='labelicon'>
-                        <div className='lader'/>
-                    </div>
-                </div>
-                <div className='' >
+                <div className='mt-56' >
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -60,7 +56,7 @@ const Topcard = () => {
                             max: 1024,
                             min: 464
                         },
-                        items: 1,
+                        items: 3,
                         partialVisibilityGutter: 30
                         }
                     }}
@@ -69,7 +65,10 @@ const Topcard = () => {
                     slidesToSlide={1}
                     swipeable
                     >
-                    <Stats />
+                    <Stats image={Heart}/>
+                    <Stats image={Like}/>
+                    <Stats image={Like}/>
+                    <Stats image={Like}/>
                 </Carousel>
                 </div> 
             </div>
