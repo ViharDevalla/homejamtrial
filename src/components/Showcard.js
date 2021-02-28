@@ -1,6 +1,8 @@
 import React from 'react'
 import arrow from '../assets/arrow.png'
 import ticket from '../assets/ticket.png'
+import tickethover from '../assets/ticketactive.png'
+
 const Showcard = (props) => {
     return (
         <div className="card">

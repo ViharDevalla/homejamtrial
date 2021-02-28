@@ -117,6 +117,17 @@
     border-color: #ffffffa2;
 }
 
+.underline{
+    text-decoration: underline;
+    text-decoration-color: rgb(58, 58, 241);
+}
+
+hr{
+    width:10px;
+    margin-top:0px;
+    padding-left: 20px;
+    border: 1px solid blue;
+}
 @media (min-width: 640px) {
 
     .card{

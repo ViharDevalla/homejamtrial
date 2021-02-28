@@ -15,9 +15,10 @@ const Review = () => {
         <div className="sm:p-10 plainback bg-cover">
             <div className="flex sm:pt-10 sm:px-32">
                 <p className="text-white sm:text-4xl libre p-5 text-xl ">Reviews</p>
-                <a href='/' className="text-white ml-auto pr-10 sm:text-lg text-sm text-yellow-400 place-self-center">View all</a>
+                <pre className="text-white ml-auto pr-10 sm:text-lg text-sm text-white-400 place-self-center nunito">1 - 21  &larr;  &rarr; </pre>
             </div>
-            <div className="sm:mx-28 mx-10 pb-10">
+            <hr className="ml-5 -mt-5 sm:mx-36 sm:w-12"/>
+            <div className="sm:mx-28 mx-10 pb-10 mt-5">
                 <Carousel
                 additionalTransfrom={0}
                 arrows

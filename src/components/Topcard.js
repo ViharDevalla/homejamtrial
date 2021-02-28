@@ -14,7 +14,7 @@ const Topcard = () => {
                 <Navbar/>
                 <div className='m-0 w-full '>
                     <p className='text-white sm:ml-40 mt-40 sm:text-8xl m-10 libre text-5xl '>Cari Cari</p>
-                    <p className='text-white text-xl sm:my-10 sm:m-40 m-10'>Live from their sofa to yours. Get closer to your favorite artists, and never miss out.</p>
+                    <p className='text-gray-300 text-xl sm:my-10 lg:text-xl lg:pr-42 md:pr-40 sm:pr-10 xl:pr-72 xl:text-3xl sm:m-40 m-10 nunito'>Live from their sofa to yours. Get closer to your favorite artists, and never miss out.</p>
                     
                 </div>
                 <div className='mt-56' >
@@ -65,10 +65,10 @@ const Topcard = () => {
                     slidesToSlide={1}
                     swipeable
                     >
-                    <Stats image={Heart}/>
-                    <Stats image={Like}/>
-                    <Stats image={Like}/>
-                    <Stats image={Like}/>
+                    <Stats image={Heart} rating="1" label="label"/>
+                    <Stats image={Like} rating="1" label="label"/>
+                    <Stats image={Like} rating="1" label="label"/>
+                    <Stats image={Like} rating="1" label="label"/>
                 </Carousel>
                 </div> 
             </div>

@@ -14,8 +14,10 @@ const Middlecard = () => {
             <div className="flex sm:pt-10 sm:px-0 lg:px-32 m-0 pt-20">
             
             <p className="text-white sm:text-4xl libre sm:p-5 text-xl">Upcoming Shows</p>
+            
             <a href='/' className="text-white ml-auto sm:pr-10 text-xs pr-8 sm:text-lg text-yellow-400 place-self-center sm:text-sm">View all</a>
             </div>
+            <hr className="md:mx-36 -mt-0 sm:mx-5 sm:w-12"/>
             <div className="sm:mx-28 mx-10 pb-10 ">
                 <Carousel
                     additionalTransfrom={0}
